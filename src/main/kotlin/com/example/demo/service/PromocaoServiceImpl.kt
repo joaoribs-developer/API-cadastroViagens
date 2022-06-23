@@ -20,6 +20,7 @@ class PromocaoServiceImpl: PromocaoService {
 
     override fun addNovaViagem(promocao: Promocao) {
         viagens[promocao.id] = promocao
+
     }
 
     override fun delete(id: Int) {
