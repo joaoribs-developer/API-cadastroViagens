@@ -4,6 +4,7 @@ import com.example.demo.model.Promocao
 
 interface PromocaoService {
 
+    fun getAll (promocao: Promocao): List<Promocao>
     fun addNovaViagem (promocao: Promocao)
     fun delete (id : Int)
     fun getGetById (id: Int): Promocao?

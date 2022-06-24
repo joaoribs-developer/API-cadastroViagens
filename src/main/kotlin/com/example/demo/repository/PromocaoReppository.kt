@@ -1,4 +1,7 @@
 package com.example.demo.repository
 
-interface promocaoReppository {
+import com.example.demo.model.Promocao
+import org.springframework.data.jpa.repository.JpaRepository
+
+interface PromocaoReppository: JpaRepository<Promocao, Int> {
 }

@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import java.util.*
+import javax.persistence.Entity
 
 @RequestMapping(value = ["/promocoes"])
 @RestController
@@ -37,7 +38,7 @@ class PromocaoController {
 
     }
 
-
+    
     @PostMapping
     fun addNovaViagem(@RequestBody promocao: Promocao): ResponseEntity<MensagemCreated> {
         this.promocaoService.addNovaViagem(promocao)
