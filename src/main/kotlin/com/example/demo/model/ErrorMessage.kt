@@ -1,4 +1,3 @@
 package com.example.demo.model
 
-class ErrorMessage {
-}
+data class ErrorMessage (val error:String,val message: String )

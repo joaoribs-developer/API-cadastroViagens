@@ -18,6 +18,9 @@ class PromocaoServiceImpl: PromocaoService {
 
     var viagens = ConcurrentHashMap<Int, Promocao>(viagensRealizadas.associateBy(Promocao::id))
 
+
+
+
     override fun addNovaViagem(promocao: Promocao) {
         viagens[promocao.id] = promocao
 
